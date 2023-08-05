@@ -9,9 +9,10 @@ import java.net.URLConnection;
 public class Jdk10 {
 
     public static void main(String[] args) throws Exception {
-        var message = "Local Variable type inference from JDK10 with 'var'";
+        var message = "A local Variable type inference from JDK10 with 'var'";
         System.out.println(message);
     }
+
     public static void before() throws Exception {
         URL url = new URL("http://www.orable.com");
         URLConnection con = url.openConnection();
