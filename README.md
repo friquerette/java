@@ -12,5 +12,8 @@ This repo to test new java feature\
 * Java 15
   * Text blocks: feature to declare multi-line strings
 * Java 16
+  * Record: (preview in JDK14) introduced to reduce repetitive boilerplate code in data model POJOs
+    * Records are similar to enums in the fact that they are a restricted form of class.
+    * Defining a record is a concise way of defining an immutable data holding object.
   * Stream.toList(): to replace Stream.collect(Collectors.toList())
  
