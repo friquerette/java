@@ -11,6 +11,28 @@ public class Jdk16 {
         // streamToList();
 
         // Record
+        // record();
+
+        // instanceOf: pattern matching
+        patternMatching();
+    }
+
+    private static void patternMatching() {
+        Object obj = "JDK16 instanceof with pattern matching";
+        // Before
+        if (obj instanceof String) {
+            String message = (String) obj;
+            System.out.println("in the old way:" + message);
+        }
+        // with JDK16
+        if (obj instanceof String message) {
+            // String message = (String) obj;
+            System.out.println("in the new way:" + message);
+        }
+
+    }
+
+    private static void record() {
         PointNotRecord pointNotRecord = new PointNotRecord(2, 3);
         System.out.println(pointNotRecord);
 
@@ -47,10 +69,12 @@ public class Jdk16 {
     private static class PointNotRecord {
         int x;
         int y;
+
         PointNotRecord(int x, int y) {
             this.x = x;
             this.y = y;
         }
+
         @Override
         public String toString() {
             // same as classical
