@@ -22,12 +22,12 @@ public class Jdk16 {
         // Before
         if (obj instanceof String) {
             String message = (String) obj;
-            System.out.println("in the old way:" + message);
+            System.out.println("in the old way: " + message);
         }
         // with JDK16
         if (obj instanceof String message) {
             // String message = (String) obj;
-            System.out.println("in the new way:" + message);
+            System.out.println("in the new way: " + message);
         }
 
     }

@@ -17,4 +17,6 @@ This repo to test new java feature\
     * Defining a record is a concise way of defining an immutable data holding object.
   * Stream.toList(): to replace Stream.collect(Collectors.toList())
   * instanceof: pattern matching
+* Java 17 
+  * sealed (and non-sealed): specify which sub-classes are allowed to extend/implement, all inherit mush be marked with sealed/final/non-sealed
  
