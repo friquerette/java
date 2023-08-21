@@ -1,9 +1,6 @@
 package com.friquerette.java.collection;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class MapExample {
     private static record Customer(String customerId, String name) {
@@ -105,6 +102,19 @@ public class MapExample {
         treeMap.entrySet().forEach((Map.Entry<String, Customer> entry) -> {
             System.out.println("key is:" + entry.getKey() + ", and value:" + entry.getValue());
         });
+
+        System.out.println("\n--- for TreeMap");
+        TreeMap<String, String> sortedMap = new TreeMap(/** can provide a custom comparator here **/);
+        sortedMap.put("a", "one");
+        sortedMap.put("b", "two");
+        sortedMap.put("c", "three");
+        // iterate in reverse order
+        sortedMap.descendingKeySet().forEach((String key) -> {
+            System.out.println("key is:" + key + ", and value:" + sortedMap.get(key));
+        });
+
+
+        sortedMap.headMap("c");
     }
 
 }
