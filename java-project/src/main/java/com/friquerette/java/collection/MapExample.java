@@ -3,10 +3,7 @@ package com.friquerette.java.collection;
 import java.util.*;
 
 public class MapExample {
-    private static record Customer(String customerId, String name) {
-    }
-
-    ;
+    private record Customer(String customerId, String name) { };
 
     /**
      * List of Map implementation:
